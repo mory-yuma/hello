@@ -1,0 +1,206 @@
+html {
+    font-size: 100%;
+}
+body {
+    color: #333;
+    font-size: 0.875rem;
+    /* min-height: 100vh;
+    position: relative; */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+main {
+
+}
+#top {
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+/*商品*/
+img {
+    max-width: 100%;
+}
+.product-list img {
+    margin-bottom: 10px;
+}
+.product-list li {
+    width: 23%;
+    margin-bottom: 40px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-list p {
+    font-size: 0.75rem;
+}
+
+.link-text {
+    display: block;
+    text-align: center;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#footer .menu{
+    display: flex;
+}
+#footer .menu li {
+    font-size: 0.75rem;
+    margin-right: 30px;
+}
+
+
+/* page1 */
+.page12 {
+    display: flex;
+    justify-content: center;
+}
+.page12 li {
+    padding: 0 20px;
+}
+.content {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+.products {
+    margin-bottom: 35px;
+}
+/* about */
+#about {
+    max-width: 600px;
+}
+#about p {
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+/* company */
+#company {
+    max-width: 600px;
+}
+#company dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#company dt {
+    width: 30%;
+    border-bottom: solid 1px #dcdbdb;
+    padding: 20px 10px;
+}
+#company dd {
+    width: 70%;
+    border-bottom: solid 1px #dcdbdb;
+    padding: 20px 10px;
+}
+
+/* btn */
+.toggle_btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 20;
+}
+.toggle_btn span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.toggle_btn span:nth-of-type(1){
+    top: 10px;
+}
+.toggle_btn span:nth-of-type(2){
+    bottom: 10px;
+}
+
+.activ .toggle_btn span:nth-of-type(1){
+    transform: translateY(4px) rotate(45deg);
+    background-color: #fff;
+}
+.activ .toggle_btn span:nth-of-type(2){
+    transform: translateY(-4px) rotate(-45deg);
+    background-color: #fff;
+}
+
+/* ナビゲーション */
+.toggle_nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    color: #fff;
+    padding: 36px 50px;
+    z-index: 20;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.toggle_nav li {
+    margin-bottom: 15px;
+}
+.activ .toggle_nav {
+    left: 0;
+    opacity: 1;
+}
+
+
+
+/* henkou */
+#mask {
+    display: none;
+    transition: all 0.5s;
+}
+.activ #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+#header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .site-title a {
+    width: 180px;
+    display: block;
+}

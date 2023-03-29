@@ -1,0 +1,279 @@
+body {
+    background-color: #e6e2d7;
+    color: #000;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/mainvisual-pc.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 60px 80px;
+    margin-bottom: 180px;
+    position: relative;
+    writing-mode: vertical-rl;
+}
+
+.site-title {
+    margin-left: 60px;
+}
+h1 a img {
+    width: 40px;
+}
+
+#nav li {
+    margin-left: 25px;
+}
+li { /*footer listも*/
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.onlinestore {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+}
+.onlinestore a {
+    border: 1px solid #e6e2d7;
+    padding: 20px 16px;
+    display: block;
+    letter-spacing: 0.1rem;
+}
+
+#news {
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#news .section-title {
+    writing-mode: vertical-rl;
+    font-weight: normal;
+}
+#news .section-title .en {
+    display: block;
+    font-size: 0.875rem;
+}
+#news .section-title .ja {
+    display: block;
+    font-size: 2.25rem;
+    letter-spacing: 4px;
+}
+
+#news .list {
+    padding: 80px 100px 0 0;
+    writing-mode: vertical-rl;
+}
+#news .list dt {
+    border-right: 1px solid #000;
+    font-size: 0.75rem;
+    padding: 15px 30px 15px 5px;
+}
+#news .list dd {
+    padding: 15px 0 15px 30px;
+}
+#news .list dd:last-child {
+    border-left: 1px solid #000 ;
+}
+
+/* 商品 */
+
+.products {
+    display: flex;
+    margin-bottom: 180px;
+}
+.products img {
+    width: 100%;
+}
+.products .img {
+    width: 65%;
+    padding-top: 80px;
+}
+.products .ja {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.products .en {
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+#products1 {
+    flex-direction: row-reverse;
+}
+#products1 .section-title {
+    writing-mode: vertical-rl;
+    margin-left: 20px;
+}
+#products1 .text {
+    width: 60%;
+    color: #fff;
+    padding: 50px 80px;
+    background: rgba(249, 233, 6, 0.6);
+    text-align: center;
+    position: relative;
+    top: -130px;
+}
+
+#products2 .section-title {
+    writing-mode: vertical-rl;
+    margin-right: 20px;
+}
+#products2 .text {
+    width: 60%;
+    color: #fff;
+    padding: 50px 80px;
+    background: rgba(149, 42, 38, 0.6);
+    text-align: center;
+    position: relative;
+    top: -130px;
+    right: -275px;
+}
+
+
+
+
+/* map */
+#shop iframe {
+    width: 100%;
+}
+/* フッター */
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 80px 30px 30px;
+}
+#footer .inner {
+    width: 100%;
+    display: flex;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+#footer .inner .left {
+    writing-mode: vertical-rl;
+}
+#footer .inner .right {
+    writing-mode: vertical-rl;
+}
+#footer address {
+    margin: 0 50px;
+    line-height: 1.6rem;
+    letter-spacing: 0.05em;
+    font-style: normal;
+}
+#footer .menu li {
+    margin-left: 20px;
+}
+
+.copyright {
+    font-size: 10px;
+    text-align: center;
+}
+
+/* sp */
+@media screen and (max-width:768px) {
+    #header {
+        background-image: url(/img/mainvisual-sp.jpg);
+        background-size: cover;
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+    #header nav li {
+        margin-left: 20px;
+    }
+    .site-title {
+        margin-left: 50px;
+    }
+    .onlinestore {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    /* お知らせ */
+    #news {
+        margin-bottom: 60px;
+    }
+     .none {
+        display: none;
+    }
+    #news .list {
+        padding: 20px;
+    }
+    #news .list dt {
+        padding: 15px 10px 15px 5px;
+    }
+    #news .list dd {
+        padding: 15px 0 15px 10px;
+    }
+    .sp_border {
+        border-left: 1px solid #000;
+    }
+    /* 商品 */
+    #products1 .section-title {
+        margin-left: 10px;
+    }
+    .products .ja {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+    .products .en {
+        display: none;
+    }
+    .products .img {
+        width: 85%;
+    }
+    #products1 .text {
+        width: 70%;
+        font-size: 15px;
+        padding: 30px;
+        position: relative;
+        top: -65px;
+    }
+    #products1 {
+        margin-bottom: 30px;
+    }
+
+    #products2 .section-title {
+        margin-right: 10px;
+    }
+    #products2 .text {
+        width: 70%;
+        padding: 30px;
+        font-size: 15px;
+        position: relative;
+        top: -85px;
+        right: -110px;
+    }
+    #products2 {
+        margin-bottom: 200px;
+    }
+    /* フッター */
+    #footer {
+        padding:40px 20px;
+    }
+    #footer .menu li {
+        margin-left: 10px;
+    }
+    #footer address {
+        margin: 0 20px;
+    }
+}

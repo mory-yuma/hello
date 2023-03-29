@@ -1,0 +1,108 @@
+
+.continer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+#header {
+    margin-top: 60px;
+}
+
+#header .site-title {
+    width: 160px;
+    margin-bottom: 15px;
+    line-height: 1px;
+}
+img {
+    max-width: 100%;
+}
+
+#index {
+    padding: 40px 0;
+    margin-bottom: 60px;
+}
+.inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.index-list {
+    margin-left: 20px;
+}
+.index-list li {
+    margin-bottom: 25px;
+}
+
+#detail .content {
+    display: flex;
+}
+#detail .content img {
+    width: 270px;
+    margin-right: 60px;
+}
+#detail .content .title {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+#detail .content .text p {
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+#detail .content dl {
+    display: flex;
+    padding: 16px 0;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+}
+#detail .content dt {
+    width: 25%;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+#detail .content dd {
+    width: 75%;
+}
+#detail .content .link {
+    color: #333;
+}
+#detail {
+    margin-bottom: 100px;
+}
+#footer {
+    font-size: 0.625rem;
+    padding: 16px 0;
+}
+
+/* モバイル */
+
+@media screen and (max-width:1024px)
+{
+    #header {
+        padding: 0 10px;
+    }    
+    #mainvisual {
+        padding: 0 10px;
+    }
+    .inner {
+        padding: 0 40px;
+    }
+    #detail .content {
+        flex-direction: column;
+    }
+    #detail .content img {
+        margin-bottom: 25px;
+    }
+    #detail .content .title {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
