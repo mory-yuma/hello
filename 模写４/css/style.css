@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* ナビ */
+.nav {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    width: 300px;
+    background-color: #121212;
+    padding: 60px 25px;
+    transition: all 0.5s;
+}
+.nav a {
+    color: #fff;
+}
+.open .nav {
+    left: 0;
+}
+
+.nav_menu {
+    margin-bottom: 60px;
+    border-top: 1px solid #fff;
+}
+.nav_menu li {
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+}
+.nav_sns li {
+    margin-bottom: 20px;
+}
+
+/* ヘッダー */
+#header {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    z-index: 10;
+}
+
+/* ボタン */
+.btn {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    z-index: 20;
+    cursor: pointer;
+}
+.btn span {
+    display: block;
+    background-color: #121212;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    transition: all 0.5s;
+}
+.btn span:nth-child(1) {
+    top: 4px;
+}
+.btn span:nth-child(2) {
+    top: 14px;
+}
+.btn span:nth-child(3) {
+    bottom: 4px;
+}
+.open .btn span:nth-child(1) {
+    background-color: #fff;
+    transform: translateY(10px) rotate(-315deg);
+}
+.open .btn span:nth-child(2) {
+    opacity: 0;
+}
+.open .btn span:nth-child(3) {
+    background-color: #fff;
+    transform: translateY(-10px) rotate(315deg);
+}
+
+/* マスク */
+.mask {
+    display: none;
+    transition: all 0.5s;
+}
+.open .mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: #121212;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+#main {
+    margin-top: 80px;
+}
+
+.video {
+    margin-bottom: 100px;
+}
+.bg-video {
+    width: 100%;
+}
+
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.slide-items img {
+    width: 100%;
+}
+
+.slide-items li {
+    padding: 0 30px;
+    display: inline-block;
+}
+
+/* ピックアップ */
+#feature {
+    max-width: 1240px;
+    padding: 100px 16px 50px;
+    margin: 50px auto 10px;
+}
+
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+} 
+.item {
+    box-shadow: 0 0 8px 4px #ccc;
+}
+.item-content {
+    padding: 30px;
+}
+.item-cat {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.item-text {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.item-date {
+    font-size: 12px;
+    text-align: right;
+}
+
+
+/* コンタクト */
+
+#contact {
+    background-color: #121212;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin: 0 auto;
+    max-width: 1240px;
+}
+
+
+.content-info p {
+    margin-bottom: 20px;
+}
+.content-info {
+    width: 45%;
+}
+.content-form {
+    width: 45%;
+}
+.content-form input {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.content-form textarea {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.button input {
+    width: 200px;
+    color: #fff;
+    background-color: #121212;
+    border: solid 1px #fff;
+    padding: 12px 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* フッター */
+#footer {
+    background-color: #121212;
+}
+
+#footer p {
+    font-size: 12px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translate(0,80px);
+    transition: all 1s;
+}
+.fadein.scrollin {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* SP */
+@media screen and (max-width:600px) {
+    #header {
+        padding: 20px 16px;
+    }
+    .btn {
+        right: 20px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content-info {
+        width: 100%;
+    }
+    .content-form {
+        width: 100%;
+    }
+    .slide-items li {
+        padding: 15px;
+    }
+}
